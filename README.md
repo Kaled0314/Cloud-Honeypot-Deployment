@@ -20,12 +20,12 @@ Data Collection and Documentation: Recorded and documented honeypot activity ove
 
 # Implementation
 
-Step 1: Initialize a protected cloud environment
+**Step 1: Initialize a protected cloud environment**
 To kick things off, I set up a DigitalOcean account and launched a cloud droplet to serve as a secure and isolated environment for the project. Since the project would require running multiple honeypot services and monitoring tools at the same time, I made sure the droplet was equipped with enough resources to handle the workload, configuring it with 4 CPUs, 160 GB of RAM, and 5 TB of storage.
 
 <img width="543" height="397" alt="Screenshot 2026-03-11 at 2 17 14 PM" src="https://github.com/user-attachments/assets/9c3c41c9-fa26-4a5f-b1cd-ee5800104fe6" />
 
-Step 2: Creating a Non-Root User
+**Step 2: Creating a Non-Root User**
 
 Once inside the droplet console, I created a dedicated home user account to handle the T-Pot installation rather than running everything under the root user. This is considered best practice as it reduces security risks associated with operating directly as root. The following commands were used to accomplish this:
 
@@ -38,7 +38,7 @@ su - home
 
 <img width="559" height="102" alt="Screenshot 2026-03-11 at 2 18 46 PM" src="https://github.com/user-attachments/assets/4286d85b-cd0e-40cc-bcaa-7223115315fb" />
 
-Step 3: Granting Administrative Privileges
+**Step 3: Granting Administrative Privileges**
 
 Before installing T-Pot, it was necessary to grant the home user elevated privileges by adding them to the sudoers list, which would allow the installation to run with the appropriate administrative permissions.  The commands involved within this process were:
 
@@ -49,7 +49,7 @@ su - home
 sudo whoami
 ```
 
-Step 4: Installing T-Pot
+**Step 4: Installing T-Pot**
 
 With the user properly configured and privileges in place, I proceeded with the installation of T-Pot by running the following cURL command, which pulled the official installation script directly from the T-Pot GitHub repository and executed it on the server.
 
@@ -60,7 +60,7 @@ env bash -c "$(curl -sL https://github.com/telekom-security/tpotce/raw/master/in
 <img width="557" height="115" alt="Screenshot 2026-03-11 at 2 21 35 PM" src="https://github.com/user-attachments/assets/3e00bc3a-b21d-4546-8ae9-ba77005b0b98" />
 
 
-Step 5:Installing T-Pot and Rebooting the Server
+**Step 5:Installing T-Pot and Rebooting the Server**
 
 During the installation process, T-Pot prompted me to select a deployment type. I opted for the Hive configuration by selecting H, which is designed to act as a centralized hub for managing multiple honeypot sensors. We successfully installed T-Pot and promptly began a reboot using command:
 
