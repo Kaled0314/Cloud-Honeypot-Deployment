@@ -97,4 +97,15 @@ Within the first ten minutes of the honeypot being live, T-Pot began capturing r
 
 <img width="557" height="310" alt="Screenshot 2026-03-11 at 2 36 16 PM" src="https://github.com/user-attachments/assets/5956ac79-1d69-486b-a2ce-7e331d9a2ebd" />
 
+# Step 9: Continued Long Term Monitoring
 
+Within just 48 hours of going live, the T-Pot honeypot was pulling in real attack data. What follows is a visual breakdown of everything the system recorded during that time
+
+
+# Conclusion:
+
+This project walks through the deployment and hands-on operation of a T-Pot honeypot hosted in a cloud environment. Over the course of the monitoring period, the system captured genuine attack activity, offering a closer look at how real threats behave and what attackers tend to target.
+
+Keeping the environment secure was a priority throughout. Steps such as setting up a dedicated user account, tightening SSH access, and maintaining encrypted remote connections ensured the system stayed protected while still allowing thorough observation.
+
+The result is a working foundation that can be built upon for further honeypot research, security analysis, and practical learning in a safe and structured setting.
