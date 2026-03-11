@@ -28,7 +28,9 @@ To kick things off, I set up a DigitalOcean account and launched a cloud droplet
 Step 2: Creating a Non-Root User
 
 After entering the droplet console, I began to create a Home user to install T-Pot and not under the Root user. The commands required to do this were: 
+
 adduser home
+
 Su - home
 
 <img width="559" height="306" alt="Screenshot 2026-03-11 at 2 18 28 PM" src="https://github.com/user-attachments/assets/fd5493e3-effd-48df-9d38-b00a4ed29ae1" />
