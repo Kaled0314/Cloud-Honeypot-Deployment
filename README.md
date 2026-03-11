@@ -22,6 +22,7 @@ Data Collection and Documentation: Recorded and documented honeypot activity ove
 
 Step 1: Initialize a protected cloud environment
 To kick things off, I set up a DigitalOcean account and launched a cloud droplet to serve as a secure and isolated environment for the project. Since the project would require running multiple honeypot services and monitoring tools at the same time, I made sure the droplet was equipped with enough resources to handle the workload, configuring it with 4 CPUs, 160 GB of RAM, and 5 TB of storage.
+
 <img width="543" height="397" alt="Screenshot 2026-03-11 at 2 17 14 PM" src="https://github.com/user-attachments/assets/9c3c41c9-fa26-4a5f-b1cd-ee5800104fe6" />
 
 Step 2: Creating a Non-Root User
