@@ -27,7 +27,7 @@ To kick things off, I set up a DigitalOcean account and launched a cloud droplet
 
 Step 2: Creating a Non-Root User
 
-After entering the droplet console, I began to create a Home user to install T-Pot and not under the Root user. The commands required to do this were: 
+Once inside the droplet console, I created a dedicated home user account to handle the T-Pot installation rather than running everything under the root user. This is considered best practice as it reduces security risks associated with operating directly as root. The following commands were used to accomplish this:
 
 adduser home
 
@@ -37,4 +37,17 @@ Su - home
 
 <img width="559" height="102" alt="Screenshot 2026-03-11 at 2 18 46 PM" src="https://github.com/user-attachments/assets/4286d85b-cd0e-40cc-bcaa-7223115315fb" />
 
+Step 3: Granting Administrative Privileges
 
+Before installing T-Pot, it was necessary to grant the home user elevated privileges by adding them to the sudoers list, which would allow the installation to run with the appropriate administrative permissions.  The commands involved within this process were:
+
+1. su - root
+2. usermod -aG sudo home
+3. su - home
+4. sudo whoami
+
+Step 4: Installing T-Pot
+
+With the user properly configured and privileges in place, I proceeded with the installation of T-Pot by running the following cURL command, which pulled the official installation script directly from the T-Pot GitHub repository and executed it on the server.
+
+<img width="557" height="115" alt="Screenshot 2026-03-11 at 2 21 35 PM" src="https://github.com/user-attachments/assets/3e00bc3a-b21d-4546-8ae9-ba77005b0b98" />
