@@ -60,7 +60,7 @@ env bash -c "$(curl -sL https://github.com/telekom-security/tpotce/raw/master/in
 <img width="557" height="115" alt="Screenshot 2026-03-11 at 2 21 35 PM" src="https://github.com/user-attachments/assets/3e00bc3a-b21d-4546-8ae9-ba77005b0b98" />
 
 
-# Step 5:Installing T-Pot and Rebooting the Server
+# Step 5: Installing T-Pot and Rebooting the Server
 
 During the installation process, T-Pot prompted me to select a deployment type. I opted for the Hive configuration by selecting H, which is designed to act as a centralized hub for managing multiple honeypot sensors. We successfully installed T-Pot and promptly began a reboot using command:
 
@@ -69,4 +69,32 @@ su - root
 reboot
 ```
 <img width="557" height="105" alt="Screenshot 2026-03-11 at 2 25 31 PM" src="https://github.com/user-attachments/assets/dc195a19-b100-4f21-904b-1d8b1c353aa1" />
+
+# Step 6: Configuring the Firewall
+
+To restrict access to the T-Pot management interface, I configured the firewall by creating inbound rules that limited access on ports 64294 through 64297 exclusively to my public IP address, ensuring that no unauthorized users could reach the system, along with adding the Droplet to the firewall.
+
+<img width="554" height="387" alt="Screenshot 2026-03-11 at 2 32 30 PM" src="https://github.com/user-attachments/assets/b74e464c-efae-4482-9e1a-a138eba07d93" />
+
+# Step 7: Accessing the T-Pot Web Interface
+
+With the firewall configured and T-Pot up and running, the web interface can now be accessed by locating your public IP address through any online lookup service and entering it into the following URL in your browser:
+
+```
+https://Machine_Public_IP_Address:64297/
+```
+<img width="555" height="327" alt="Screenshot 2026-03-11 at 2 34 15 PM" src="https://github.com/user-attachments/assets/8521ec74-2aa8-4c07-86d5-46639198a601" />
+
+# Step 8: Monitoring Attack Activity
+
+Within the first ten minutes of the honeypot being live, T-Pot began capturing real world attack data. Using the built in Attack Map feature, incoming threats could be visualized in real time, while the Kibana dashboard provided a deeper layer of analytics to help make sense of the activity being recorded.
+
+<img width="557" height="311" alt="Screenshot 2026-03-11 at 2 35 18 PM" src="https://github.com/user-attachments/assets/284cd275-dea7-4bac-8e83-a307a106ead9" />
+
+<img width="558" height="310" alt="Screenshot 2026-03-11 at 2 35 38 PM" src="https://github.com/user-attachments/assets/7ae28f89-2eff-4a64-84b2-9b2205184994" />
+
+<img width="557" height="312" alt="Screenshot 2026-03-11 at 2 35 56 PM" src="https://github.com/user-attachments/assets/f9bf63bf-6431-491b-94ba-b110d71a338e" />
+
+<img width="557" height="310" alt="Screenshot 2026-03-11 at 2 36 16 PM" src="https://github.com/user-attachments/assets/5956ac79-1d69-486b-a2ce-7e331d9a2ebd" />
+
 
