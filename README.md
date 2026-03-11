@@ -29,9 +29,10 @@ Step 2: Creating a Non-Root User
 
 Once inside the droplet console, I created a dedicated home user account to handle the T-Pot installation rather than running everything under the root user. This is considered best practice as it reduces security risks associated with operating directly as root. The following commands were used to accomplish this:
 
+```bash
 adduser home
-
-Su - home
+su - home
+```
 
 <img width="559" height="306" alt="Screenshot 2026-03-11 at 2 18 28 PM" src="https://github.com/user-attachments/assets/fd5493e3-effd-48df-9d38-b00a4ed29ae1" />
 
@@ -52,4 +53,20 @@ Step 4: Installing T-Pot
 
 With the user properly configured and privileges in place, I proceeded with the installation of T-Pot by running the following cURL command, which pulled the official installation script directly from the T-Pot GitHub repository and executed it on the server.
 
+```bash
+env bash -c "$(curl -sL https://github.com/telekom-security/tpotce/raw/master/install.sh)"
+```
+
 <img width="557" height="115" alt="Screenshot 2026-03-11 at 2 21 35 PM" src="https://github.com/user-attachments/assets/3e00bc3a-b21d-4546-8ae9-ba77005b0b98" />
+
+
+Step 5:Installing T-Pot and Rebooting the Server
+
+During the installation process, T-Pot prompted me to select a deployment type. I opted for the Hive configuration by selecting H, which is designed to act as a centralized hub for managing multiple honeypot sensors. We successfully installed T-Pot and promptly began a reboot using command:
+
+```bash
+su - root
+reboot
+```
+<img width="557" height="105" alt="Screenshot 2026-03-11 at 2 25 31 PM" src="https://github.com/user-attachments/assets/dc195a19-b100-4f21-904b-1d8b1c353aa1" />
+
