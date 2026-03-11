@@ -41,10 +41,12 @@ Step 3: Granting Administrative Privileges
 
 Before installing T-Pot, it was necessary to grant the home user elevated privileges by adding them to the sudoers list, which would allow the installation to run with the appropriate administrative permissions.  The commands involved within this process were:
 
-1. su - root
-2. usermod -aG sudo home
-3. su - home
-4. sudo whoami
+```bash
+su - root
+usermod -aG sudo home
+su - home
+sudo whoami
+```
 
 Step 4: Installing T-Pot
 
