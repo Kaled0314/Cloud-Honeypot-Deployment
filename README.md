@@ -12,11 +12,11 @@ The goal of this project is to be a gateway introduction into working with Honey
 
 # Skills Learned
 
-Cloud Server Deployment: Provisioned and configured a DigitalOcean droplet with sufficient resources to host the T-Pot platform.
-Linux Server Administration: Managed system updates, user accounts, and administrative privileges to maintain a secure server environment.
-Honeypot Installation and Configuration: Deployed T-Pot and developed a working understanding of its architecture and core services.
-Web Interface Monitoring: Navigated the T-Pot web interface to observe and interpret live attack activity in real time.
-Data Collection and Documentation: Recorded and documented honeypot activity over time to support analysis and review.
+- Cloud Server Deployment: Provisioned and configured a DigitalOcean droplet with sufficient resources to host the T-Pot platform.
+- Linux Server Administration: Managed system updates, user accounts, and administrative privileges to maintain a secure server environment.
+- Honeypot Installation and Configuration: Deployed T-Pot and developed a working understanding of its architecture and core services.
+- Web Interface Monitoring: Navigated the T-Pot web interface to observe and interpret live attack activity in real time.
+- Data Collection and Documentation: Recorded and documented honeypot activity over time to support analysis and review.
 
 # Implementation
 
