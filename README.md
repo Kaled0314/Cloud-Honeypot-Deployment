@@ -99,8 +99,15 @@ Within the first ten minutes of the honeypot being live, T-Pot began capturing r
 
 # Step 9: Continued Long Term Monitoring
 
-Within just 48 hours of going live, the T-Pot honeypot was pulling in real attack data. What follows is a visual breakdown of everything the system recorded during that time
+Within just 48 hours of going live, the T-Pot honeypot was pulling in real attack data. What follows is a visual breakdown of everything the system recorded during that time within Kibana.
 
+<img width="623" height="346" alt="Screenshot 2026-03-13 at 11 14 22 AM" src="https://github.com/user-attachments/assets/8c2489dd-4543-49e1-a8b5-3beb60ae6056" />
+
+<img width="620" height="288" alt="Screenshot 2026-03-13 at 11 14 41 AM" src="https://github.com/user-attachments/assets/97345d64-4a9e-4c81-84f4-98faa613a881" />
+
+<img width="1352" height="354" alt="Screenshot 2026-03-13 at 11 15 34 AM" src="https://github.com/user-attachments/assets/de3b1300-9eeb-42a5-ac0f-0e302d87d2bc" />
+
+<img width="617" height="208" alt="Screenshot 2026-03-13 at 11 15 15 AM" src="https://github.com/user-attachments/assets/893d63b9-76fd-4f53-9584-4fe824c28726" />
 
 # Conclusion:
 
